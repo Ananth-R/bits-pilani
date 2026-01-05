@@ -1,0 +1,74 @@
+npm i -g @angular/cli@18
+
+npx ng new my-app --no-standalone
+
+cd my-app
+
+starting the server
+npm start
+
+creating a component
+npx ng g c components/mainapp --skip-tests
+
+Extensions: material icon theme, prettier
+
+ng => directive
+
+binding:
+
+property binding
+event binding
+style binding
+2 way data binding
+
+
+control+c to stop the server
+
+Form:
+Template driven form
+Data driven form
+
+To add angular material
+npx ng add @angular/material@18
+
+
+
+For DataBase
+npm init -y
+npm i json-server
+npx json-server --watch db.json
+
+Create new module
+npx ng g m material 
+
+
+
+Lazy loading
+
+Command to create a routing module for your own module:
+npx ng g m customers --route customers --module app.module
+
+
+
+Downladed ngrx template: https://github.com/SkillsMetrix/siemens-angular-june/blob/main/ngrx-template.zip - ONLY TOOK MGRX-TEMPLATE 
+And, cd-ed into it and ran:
+npm i --force
+
+
+got an error while doing npm start, for that use this command: set NODE_OPTIONS= --openssl-legacy-provider
+And then do npm start
+
+
+For nprx effects:
+npm i @ngrx/effects@11.1.1 --force
+
+
+Custom Directive
+Custom pipe   | => pipe -> it comes after '|' sign. Generally seen in HTML files
+
+
+For legacy apps:
+
+Do: set NODE_OPTIONS=--openssl-legacy-provider
+before running npm start
+
